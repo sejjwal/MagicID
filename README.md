@@ -1,0 +1,2 @@
+# MagicID
+File type identifier 
