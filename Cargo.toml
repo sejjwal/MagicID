@@ -1,0 +1,20 @@
+[package]
+name = "magicid"
+version = "1.0.0"
+edition = "2021"
+authors = ["MagicID Project"]
+description = "A fast, accurate file type identifier using magic number signatures"
+readme = "README.md"
+license = "MIT"
+keywords = ["magic-numbers", "file-type", "forensics", "security", "cli"]
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+colored = "2.0"
+walkdir = "2.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[[bin]]
+name = "magicid"
+path = "src/main.rs"
